@@ -26513,7 +26513,7 @@
           Y = function () {
             $(!0);
             try {
-              fetch("http://ec2-18-228-192-11.sa-east-1.compute.amazonaws.com:8080/secoes", {
+              fetch("http://eleicoes.giullianosiviero.com/secoes", {
                 method: "POST",
                 body: JSON.stringify({
                   filter: { turno: s, uf: p, municipio: b, zona: S, secao: Z },
