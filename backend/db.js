@@ -2,14 +2,14 @@ var mysql = require("mysql2");
 require("dotenv").config();
 
 var con = mysql.createConnection({
-  host: process.env.HOST,
-  user: process.env.USER,
-  password: process.env.PWD,
+  host: process.env.DBHOST,
+  user: process.env.DBUSER,
+  password: process.env.DBPWD,
   database : process.env.DB
 });
 
+
 con.connect(function (err) {
-    console.log(err);
   if (err) throw err;
 });
 
