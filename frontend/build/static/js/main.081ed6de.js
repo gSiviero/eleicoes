@@ -26513,7 +26513,7 @@
           Y = function () {
             $(!0);
             try {
-              fetch("http://localhost:3001/secoes", {
+              fetch("http://18.228.192.11:8080/secoes", {
                 method: "POST",
                 body: JSON.stringify({
                   filter: { turno: s, uf: p, municipio: b, zona: S, secao: Z },
