@@ -33,7 +33,7 @@ function getResults(o) {
   whereClause = createWhereClause(o.filter);
   var query = `select * from secoes ${whereClause} order by ${o.sort.column} ${
     o.sort.direction
-  } limit ${(o.page - 1) * o.pageSize},${o.pageSize}`;
+  } limit ${(o.page - 1) * o.pageSize},${o.pageSize < 30 ? o.pageSize : 30}`;
   return new Promise((resolve, reject) => {
     con.query(query, (err, result) => {
       if (err) throw err;
