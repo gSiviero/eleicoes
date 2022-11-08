@@ -26513,7 +26513,7 @@
           Y = function () {
             $(!0);
             try {
-              fetch("http://eleicoes.giullianosiviero.com/secoes", {
+              fetch("https://eleicoes.giullianosiviero.com/secoes", {
                 method: "POST",
                 body: JSON.stringify({
                   filter: { turno: s, uf: p, municipio: b, zona: S, secao: Z },
